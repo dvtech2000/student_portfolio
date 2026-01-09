@@ -1,0 +1,90 @@
+/* --- INSTRUCTIONS --- */
+/* You can change the colors below to match your personality! */
+
+:root {
+    /* CHANGE THESE COLORS */
+    --main-color: #4a90e2;    /* Nice Blue */
+    --accent-color: #2c3e50;  /* Dark Blue/Grey */
+    --bg-color: #f4f4f4;      /* Light Grey Background */
+    --text-color: #333;       /* Dark Text */
+}
+
+/* GENERAL SETUP */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* HEADER STYLE */
+header {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 40px 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* BOX CONTAINERS */
+.container {
+    max-width: 800px;
+    margin: 30px auto; /* Centers the box */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+}
+
+/* PROJECT GRID (Makes cards sit side-by-side) */
+.project-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Wraps to next line on small screens */
+}
+
+.card {
+    background: #eef2f3;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    border: 2px solid transparent;
+}
+
+/* Hover Effect: Changes border color when mouse is over it */
+.card:hover {
+    border-color: var(--main-color);
+}
+
+/* PYTHON ZONE STYLE */
+.python-zone {
+    border: 2px dashed var(--main-color);
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON STYLE */
+.btn {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+}
