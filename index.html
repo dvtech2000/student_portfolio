@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Student Name</h1>
+        <p>8th Grade Computer Science Portfolio</p>
+    </header>
+
+    <section class="container">
+        <h2>👋 About Me</h2>
+        <p>
+            Welcome to my digital portfolio! This year I learned about HTML, CSS, and Python.
+            I enjoy problem-solving and building things with code.
+        </p>
+    </section>
+
+    <section class="container">
+        <h2>💻 My Best Projects</h2>
+        <div class="project-grid">
+            
+            <div class="card">
+                <h3>Password Checker</h3>
+                <p>A Python program that checks if a password is strong or weak.</p>
+                <a href="#">View Code</a>
+            </div>
+
+            <div class="card">
+                <h3>Minecraft Skin Hack</h3>
+                <p>I learned to edit file paths to import custom skins into the game.</p>
+                <a href="#">View Image</a>
+            </div>
+
+            </div>
+    </section>
+
+    <section class="container python-zone">
+        <h2>🚀 My Coder Stats</h2>
+        <p>Enter your stats to see your current developer level!</p>
+        
+        <label>Projects Completed:</label>
+        <input type="text" id="project-count" placeholder="e.g., 5">
+        
+        <label>Hours Coded:</label>
+        <input type="text" id="hours-count" placeholder="e.g., 20">
+
+        <button py-click="calculate_level" class="btn">Calculate Level</button>
+
+        <h3 id="level-output"></h3>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Student Portfolio</p>
+    </footer>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
