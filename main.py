@@ -27,10 +27,10 @@ def calculate_level(event):
     
     level_name = ""
     
-    if projects >= 10 and hours >= 50:
+    if projects >= 30 and hours >= 200:
         level_name = "🏆 MASTER CODER"
         color = "gold"
-    elif projects >= 5 and hours >= 20:
+    elif projects >= 10 and hours >= 50:
         level_name = "🚀 ADVANCED DEVELOPER"
         color = "blue"
     elif projects >= 1:
